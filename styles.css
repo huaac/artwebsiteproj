@@ -1,0 +1,28 @@
+
+.flex-container {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    /*overflow: hidden;*/
+}
+
+.header-logo{
+    position: relative;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.header-nav-wrapper{
+    /*color: white; /*#A2ABA8;*/
+    /*font-size: 120%;*/
+    text-align: right;
+    padding-left: .6vw;
+    /*float:right;*/
+    /*justify-content: flex-end;*/
+    /*display: inline;*/
+    /*whitespace: nowrap;*/
+}
+
+.header-nav-list{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
