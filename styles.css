@@ -58,6 +58,26 @@ main {
     cursor: pointer;
     border-radius: 8px;
     position: relative;
+
+    left: 8%;
+    /*transform: translate(-50%, -100%);*/
+
+}
+
+.navbar-toggler-icon {
+    background-image: url('img/navbtn.png');
+}
+
+.navbar-toggler {
+    /*padding: .25rem .75rem;*/
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    display: inline-block;
+
 }
 
 .parent-grid{
