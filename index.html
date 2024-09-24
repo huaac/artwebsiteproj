@@ -15,10 +15,10 @@
            <img src="img/awlHeaderLogo.gif" class="header-logo"/>
         </div>
 <!--        <img src="img/awlHeaderLogo.gif" class="header-logo"/>-->
-        <button type="button" class="navbar-toggler justify-content-between col-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false" aria-controls="collapseExample">
+        <button type="button" class="navbar-toggler justify-content-between col-2" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" onclick="openNav()"> <!-- data-bs-target="#navbarCollapse"-->
                 <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="header-nav-wrapper collapse navbar-collapse ms-auto col-6" id="navbarCollapse">
+        <div class="header-nav-wrapper collapse navbar-collapse ms-auto col-6" id="myNav"> <!-- id="navbarCollapse"-->
             <nav class="header-nav-list">
                 <div class="header-nav-item">
                     <a href="/">Home</a>
@@ -74,6 +74,17 @@
 <!--                <btn class="button2">Find the perfect class for you!</btn>-->
 <!--            </div>-->
 <!--        </div>-->
+        <script>
+            function openNav() {
+            document.getElementById(myNav).style.width = "100%";
+            console.log(event.isTrusted ? 'Manually clicked' : 'Clicked programatically');
+            }
+
+            function closeNav() {
+            document.getElementById(myNav).style.width = "0%";
+            }
+        </script>
     </main>
+
 </body>
 </html>
