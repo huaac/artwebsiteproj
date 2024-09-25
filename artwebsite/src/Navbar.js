@@ -11,7 +11,6 @@ function Navbar() {
           <img src={logo} alt="Logo" />
         </NavLink>
         
-        {/* Navigation Links */}
         <ul className="nav-menu">
           <li className="nav-item">
             <NavLink exact to="/" className="nav-links">
