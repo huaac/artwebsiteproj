@@ -10,7 +10,7 @@ import FAQ from './FAQ';
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 

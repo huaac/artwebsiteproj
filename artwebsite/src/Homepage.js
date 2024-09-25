@@ -1,12 +1,20 @@
 import React from 'react';
 import './App.css'; 
+import forestbg from './img/forestbackground.jpg';
+
 //import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function Homepage() {
   return (
     <div className="App">
       <main>
-        <div className="simple-textbtn forestbg col-sm-12">
+        <div className="simple-textbtn col-sm-12" style={{
+        backgroundImage: `url(${forestbg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        height: '55vh',
+      }}>
           <h2 style={{ color: 'white', textAlign: 'center', paddingTop: '150px', fontSize: '40px' }}>
             Take an art class with us!
           </h2>
