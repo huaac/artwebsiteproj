@@ -7,6 +7,7 @@ import Team from './Team';
 import Services from './Services';
 import Gallery from './Gallery';
 import FAQ from './FAQ';
+import Guidelines from './Guidelines';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path='/guidelines' element={<Guidelines />} />
       </Routes>
     </>
   );
