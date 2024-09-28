@@ -5,8 +5,13 @@ import logo from "./img/awlHeaderLogo.gif"
 import forestbg from "./img/forestbackground.jpg"
 import navbtn from "./img/navbtn.png"
 
+import { Carousel } from "./Carousel";
+//import { RadioButton } from "./index.css"; //import(url)
+//import("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
 
 function App() {
+
+
 
     const handleClick = () => {
         console.log("button is clicked");
@@ -98,6 +103,12 @@ function App() {
             </div>
 
             <div className="carouselgallery">
+                <div className="info" style={{textAlign:'center'}}>
+                    <h2 className="bolded" style={{color:'white', fontSize: '40px', paddingTop: '50px'}}>Check out some of our amazing artists!</h2>
+                </div>
+                <div>
+                    <div className="carousel-alignment"><Carousel /></div>
+                </div>
             </div>
 
         </main>
