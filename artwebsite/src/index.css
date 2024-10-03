@@ -57,7 +57,7 @@ body {
     font-size: 20px;
 }
 
-.infoandbutton {
+.infoandbutton, .contact-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -67,6 +67,7 @@ body {
         display: grid;
     }
 }
+
 
 .overlay {
     height:0%;
