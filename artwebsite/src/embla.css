@@ -89,3 +89,31 @@
   width: 17px;
   height: 17px;
 }
+
+@media (max-width: 640px) {
+  .slide-image {
+    width: 200px;  
+    height: 100px; 
+    object-fit: cover; 
+    border: 2px solid white; 
+    margin-left: -30px;
+  }
+
+  .embla__dots {
+    position: absolute; 
+    bottom: 5px; 
+    left: 230px; 
+    display: flex;
+    gap: 10px; 
+  }
+
+  .embla__dot {
+    width: 15px;
+    height: 15px;
+  }
+
+  .embla__dot:after {
+    width: 15px;
+    height: 15px;
+  }
+}
