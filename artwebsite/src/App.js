@@ -5,6 +5,7 @@ import logo from "./img/awlHeaderLogo.gif"
 import forestbg from "./img/forestbackground.jpg"
 import navbtn from "./img/navbtn.png"
 
+import { Contact } from "./Contact";
 import Carousel from "./Carousel";
 import './embla.css';
 //import { RadioButton } from "./index.css"; //import(url)
@@ -114,6 +115,15 @@ function App() {
                 </div>
             </div> */}
 
+            <div className="contact-section" style={{flexDirection:'row', backgroundColor: '#f8f8f8'}}>
+                <div className="info" style={{flexDirection:'column', flex: '3', paddingTop: '200px'}}>
+                    <h2 className="bolded"style={{paddingLeft: '50px', fontSize: '40px'}}>Have a Question?</h2>
+                    <p className='regtxt'>Reach out and we will get back to you!</p>
+                </div>
+                <div className= "info" style={{flexDirection:'column', flex: '3'}}>
+                    <div style={{paddingTop: '50px', paddingRight: '15px'}}> <Contact /> </div>
+                </div>
+            </div>
         </main>
 
         <div className="carouselgallery">
