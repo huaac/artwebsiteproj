@@ -1,3 +1,42 @@
+.h2 {
+  color: black;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 30px;
+}
+
+.advertise h3 {
+  color: black;
+  padding-top: 15px;
+  font-size: 20px;
+  margin: 10px auto; 
+}
+
+.advertise, .guidelines {
+  width: 100%; 
+  text-align: left; 
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+
+.guidelines-button {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 40%; 
+  padding: 12px 20px; 
+  background-color: #f0f0f0; 
+  border: 2px; 
+  font-size: 20px; 
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.plus-sign {
+  margin-left: auto; 
+  font-size: 20px; 
+}
 .button-tabs .tab {
   padding: 10px 20px;
   background-color: lightgray;
@@ -7,16 +46,34 @@
 }
 
 .button-tabs .active {
-  background-color: #003366; 
+  background-color: lightblue; 
   color: white;
 }
 
-.content{
-  padding: 20px;
-  background-color: #003366;
-  flex-direction: column;  /* Stacks elements vertically */
-  box-sizing: border-box;
+.location-tabs {
+  margin-right: 10px;
+  margin-left: 10px;
 }
+
+.content {
+  padding: 20px;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+}
+
+.front {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;  
+}
+
+
+
+
+
 
 
 
