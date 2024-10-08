@@ -89,6 +89,10 @@ import { DotButton, useDotButton } from './CarouselButton'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
+import Abbey14OilP from './img/Abbey14OilP.svg';
+import Isaac11PastelP from './img/Isaac11PastelP.svg';
+import Jaelynn16OilsP from './img/Jaelynn16OilsP.svg';
+
 const EmblaCarousel = (props) => {
   const { options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
@@ -111,9 +115,9 @@ const EmblaCarousel = (props) => {
   )
 
   const slides = [
-    { icon: require('./img/Abbey14OilP.svg') }, 
-    { icon: require('./img/Isaac11PastelP.svg') },
-    { icon: require('./img/Jaelynn16OilsP.svg') }
+    { icon: Abbey14OilP },
+    { icon: Isaac11PastelP },
+    { icon: Jaelynn16OilsP }
   ];
 
   return (
@@ -123,7 +127,7 @@ const EmblaCarousel = (props) => {
           {slides.map((slide, index) => (  
             <div className="embla__slide" key={index}>
               <img
-                src={slide.icon.default}  
+                src={slide.icon}  
                 alt={`Slide ${index + 1}`}
                 className="slide-image"
               />
