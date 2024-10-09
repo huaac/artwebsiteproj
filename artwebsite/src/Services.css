@@ -1,3 +1,87 @@
-.art-class-container {
-  background-color: aqua;
+.services-container {
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.camp-container {
+  height: 60vh;
+  justify-content: center; 
+  align-items: center
+}
+
+.services-guideline-link {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.art-class-container, .birthday-container, .camp-container {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #a5a58d;
+  color: #110904;
+  overflow-y: scroll;
+}
+
+.services-header {
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.tuition-info {
+  margin-top: 10px;
+}
+
+.starred {
+  font-size: 12px;
+}
+
+.tuition-info, .adult-info, .family-info, .commitment-info, .referral-info {
+  margin-right: auto;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.summer-schedule {
+  width: 120%; 
+  max-width: 130%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.camp-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .camp-container {
+    height: 100vh; 
+    overflow-y: scroll;
+  }
+
+  .summer-schedule {
+    max-width: 110%; 
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .camp-container {
+    height: 90vh; 
+    overflow-y: scroll;
+  }
+
+  .summer-schedule {
+    max-width: 110%; 
+    margin-left: 7%;
+  }
 }
