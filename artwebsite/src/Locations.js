@@ -45,21 +45,18 @@ const Locations = () => {
 
       <div className='money'>
         <div className='tuition'>
-          <h2>
-            Need to Pay Tuition?
-          </h2>
-          <button>Pay Tuition</button>
+          <h2>Need to Pay Tuition?</h2>
+          <button className='money-tuition' onClick={() => window.location.href='https://artwithlarisse.square.site/shop/pay-tuition/2'}>
+            Pay Tuition
+          </button>
         </div>
-
         <div className='supplies'>
-          <h2>
-            Need more Art Supplies?
-          </h2>
-          <button>Purchase Art Supplies</button>
+          <h2>Need more Art Supplies?</h2>
+          <button className='money-supplies' onClick={() => window.location.href='https://artwithlarisse.square.site/shop/art-supplies/7'}>Purchase Art Supplies</button>
         </div>
       </div>
 
-      <h2>We have 3 locations in San Diego locations: </h2>
+      <h2 className='location-header'>We have 3 locations in San Diego locations: </h2>
       <div className='location-tabs'>
         <div className='button-tabs'>
           <button
@@ -85,49 +82,67 @@ const Locations = () => {
         <div className='location-info'>
           {toggle === 1 && (
             <div className='content'>
-              <div className='info'>
-                <h2>La Mesa</h2>
-                <p>Address: 123 La Mesa Blvd, La Mesa, CA 91942</p>
-                <p>Phone: (555) 123-4567</p>
-                <button>Pay Tuition</button>
+              <div className='group'>
+                <div className='info'>
+                  <h2>La Mesa</h2>
+                  <p>6119 Lake Murray Blvd, La Mesa, CA 91942</p>
+                  <p>(619) 857-1270</p>
+                  <div className='tuition-container'>
+                    <button className='tuition-btn' onClick={() => window.location.href='https://artwithlarisse.square.site/shop/pay-tuition/2'}>Pay Tuition</button>
+                  </div>
+                </div>
+                <div className='front'>
+                  <img src={lamesafront} alt="La Mesa Front" />
+                </div>
+              </div>
                 <h3>Schedule</h3>
-                <p onClick={guidelines}>Studio Safety Guidelines</p>
-                <LaMesa/>
-              </div>
-              <div className='front'>
-                <img src={lamesafront} alt="La Mesa Front" />
-              </div>
+                <p className="guideline-link" onClick={guidelines}>Studio Safety Guidelines</p>
+                <div className='studio'>
+                  <LaMesa  />
+                </div>
             </div>
           )}
           {toggle === 2 && (
             <div className='content'>
+            <div className='group'>
               <div className='info'>
                 <h2>Bonita</h2>
-                <p>Address: 123 La Mesa Blvd, La Mesa, CA 91942</p>
-                <p>Phone: (555) 123-4567</p>
-                <button>Pay Tuition</button>
-                <h3>Schedule</h3>
-                <p onClick={guidelines}>Studio Safety Guidelines</p>
-                <Bonita />
+                <p>4510 Bonita Road, Bonita, CA 91902</p>
+                <p>(619) 508-1299</p>
+                <div className='tuition-container'>
+                  <button className='tuition-btn' onClick={() => window.location.href='https://artwithlarisse.square.site/shop/pay-tuition/2'}>Pay Tuition</button>
+                </div>
               </div>
               <div className='front'>
                 <img src={bonitafront} alt="Bonita Front" />
+              </div>
+            </div>
+              <h3>Schedule</h3>
+              <p className="guideline-link" onClick={guidelines}>Studio Safety Guidelines</p>
+              <div className='studio'>
+                <Bonita  />
               </div>
           </div>
           )}
           {toggle === 3 && (
             <div className='content'>
+            <div className='group'>
               <div className='info'>
                 <h2>Santee</h2>
-                <p>Address: 123 La Mesa Blvd, La Mesa, CA 91942</p>
-                <p>Phone: (555) 123-4567</p>
-                <button>Pay Tuition</button>
-                <h3>Schedule</h3>
-                <p onClick={guidelines}>Studio Safety Guidelines</p>
-                <Santee />
+                <p>9225 Carlton Hills Blvd, Ste. 5, Santee, CA 92071</p>
+                <p>(619) 855-2787</p>
+                <div className='tuition-container'>
+                  <button className='tuition-btn' onClick={() => window.location.href='https://artwithlarisse.square.site/shop/pay-tuition/2'}>Pay Tuition</button>
+                </div>
               </div>
               <div className='front'>
                 <img src={santeefront} alt="Santee Front" />
+              </div>
+            </div>
+              <h3>Schedule</h3>
+              <p className="guideline-link" onClick={guidelines}>Studio Safety Guidelines</p>
+              <div className='studio'>
+                <Santee  />
               </div>
           </div>
           )}

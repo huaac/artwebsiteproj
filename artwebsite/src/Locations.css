@@ -12,8 +12,8 @@
   margin: 10px auto; 
 }
 
-.advertise, .guidelines {
-  width: 100%; 
+.advertise, .guidelines, .money{
+  width: 90%; 
   text-align: left; 
   margin-top: 10%;
   margin-bottom: 10%;
@@ -23,26 +23,51 @@
 .guidelines-button {
   display: flex;
   justify-content: space-between; 
-  align-items: center;
+  align-items: center; 
   width: 40%; 
   padding: 12px 20px; 
-  background-color: #f0f0f0; 
-  border: 2px; 
   font-size: 20px; 
-  cursor: pointer;
-  margin-top: 25px;
+  background-color: #f0f0f0; 
+  border: 2px solid #ccc;
+  cursor: pointer; 
+  margin-top: 30px;
+  margin-left: 5px;
 }
 
-.plus-sign {
-  margin-left: auto; 
+.dropdown {
+  text-align: right;
   font-size: 20px; 
 }
+
+.money {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.money-tuition, .money-supplies {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #A59A6C;
+  color: white;
+  border-color: none;
+  cursor: pointer;
+}
+
+
 .button-tabs .tab {
   padding: 10px 20px;
   background-color: lightgray;
   border: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 2px;
+  width: 200px;
+  height: 50px;
+  font-size: larger;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .button-tabs .active {
@@ -50,32 +75,87 @@
   color: white;
 }
 
+.location-header{
+  width: 90%; 
+  text-align: left; 
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
 .location-tabs {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 5%;
 }
 
 .content {
-  padding: 20px;
+  display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  min-height: 770px;
   background-color: lightblue;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
+
+.content h3, .guideline-link, .studio{
+  margin-left: 10%; 
+  width: 110%;
+}
+
+.guideline-link {
+  padding: 10px 0px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.content h3{
+  margin-top: 5%;
+  font-size: 25px;
+  font-weight: normal;
+}
+
 
 .front {
-  width: 200px;
-  height: 200px;
-  margin-left: auto;  
+  display: flex;
+  justify-content: flex-end; 
+  width: 50%; 
+}
+
+.front img {
+  width: 300px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.info {
+  width: 30%; 
+  display: flex;
+  flex-direction: column;
 }
 
 
+.tuition-btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #A59A6C;
+  color: white;
+  border-color: none;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
+.content, .group, .info, .front, .advertise, .guidelines, .button-tabs, .location-header, .location-tabs {
+  overflow-x: hidden;
+}
