@@ -33,12 +33,12 @@ function Navbar() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink exact to="/services" className="nav-links">
+            <NavLink exact to="/gallery" className="nav-links">
               Gallery
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink exact to="/services" className="nav-links">
+            <NavLink exact to="/faq" className="nav-links">
               FAQ
             </NavLink>
           </li>
