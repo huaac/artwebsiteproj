@@ -51,6 +51,12 @@
   display: block;
 }
 
+.faq-answer ul {
+  padding-left: 0; 
+  margin-bottom: 15px;
+}
+
+
 @media (max-width: 768px) {
   .faq-columns {
     grid-template-columns: 1fr; 

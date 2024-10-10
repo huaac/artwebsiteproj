@@ -43,7 +43,7 @@ const FAQ = () => {
     },
     {
       question: "Do you offer discounts?",
-      answer: "We have a couple of ways for our students to save their pennies. If you pay for 3 full months (12 weeks) in advance we offer a discount. We offer sibling discounts.If you refer a friend and they start classes with us we thank you with a free class for each person referred."
+      answer: "We have a couple of ways for our students to save their pennies. \nIf you pay for 3 full months (12 weeks) in advance we offer a discount. \nWe offer sibling discounts. \nIf you refer a friend and they start classes with us we thank you with a free class for each person referred."
     },
     {
       question: "Do you work with Charter Schools?",
@@ -62,29 +62,54 @@ const FAQ = () => {
     <div className="faq-container">
       <h1 className="faq-header">Frequently Asked Questions</h1>
       <div className="faq-columns">
-        <div className="faq-column">
-          {firstHalf.map((faq, index) => (
-            <div key={index} className="faq-item">
-              <div className="faq-question" onClick={() => toggleTab(index)}>
-                {faq.question}
-                <span className="faq-toggle">{openTab === index ? '-' : '+'}</span>
-              </div>
-              {openTab === index && <div className="faq-answer">{faq.answer}</div>}
+      <div className="faq-column">
+        {firstHalf.map((faq, index) => (
+          <div key={index} className="faq-item">
+            <div className="faq-question" onClick={() => toggleTab(index)}>
+              {faq.question}
+              <span className="faq-toggle">{openTab === index ? '-' : '+'}</span>
             </div>
-          ))}
-        </div>
+            {openTab === index && (
+              <div className="faq-answer">
+                {faq.answer.includes('\n') ? (
+                  <ul>
+                    {faq.answer.split('\n').map((item, i) => (
+                      <ul key={i}>{item}</ul>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{faq.answer}</p>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
 
-        <div className="faq-column">
-          {secondHalf.map((faq, index) => (
-            <div key={index + firstHalf.length} className="faq-item">
-              <div className="faq-question" onClick={() => toggleTab(index + firstHalf.length)}>
-                {faq.question}
-                <span className="faq-toggle">{openTab === index + firstHalf.length ? '-' : '+'}</span>
-              </div>
-              {openTab === index + firstHalf.length && <div className="faq-answer">{faq.answer}</div>}
+      <div className="faq-column">
+        {secondHalf.map((faq, index) => (
+          <div key={index + firstHalf.length} className="faq-item">
+            <div className="faq-question" onClick={() => toggleTab(index + firstHalf.length)}>
+              {faq.question}
+              <span className="faq-toggle">{openTab === index + firstHalf.length ? '-' : '+'}</span>
             </div>
-          ))}
-        </div>
+            {openTab === index + firstHalf.length && (
+              <div className="faq-answer">
+                {faq.answer.includes('\n') ? (
+                  <ul>
+                    {faq.answer.split('\n').map((item, i) => (
+                      <ul key={i}>{item}</ul>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{faq.answer}</p>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
       </div>
     </div>
   );
