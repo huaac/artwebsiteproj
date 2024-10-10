@@ -26,6 +26,10 @@
   padding: 20px;
   background-color: #A59A6C;
   color: #FAF9F6;
+  border-radius: 5px;
+  border-width: 3px;
+  border-color: #607432;
+  border-style: solid;
 }
 
 .faq-columns {
@@ -49,6 +53,12 @@
   background-color: #A59A6C;
   color: #FAF9F6;
   display: block;
+  border-radius: 5px;
+  margin-top: -10px;
+  border-width: 3px;
+  border-color: #607432;
+  border-style: solid;
+  border-top-color: #A59A6C;
 }
 
 .faq-answer ul {
