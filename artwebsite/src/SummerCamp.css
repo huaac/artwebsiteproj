@@ -1,0 +1,41 @@
+.schedule {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(7, 1fr); 
+  width: 75%;
+  height: 10px;
+}
+
+.header {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.week {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.time {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.location {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+

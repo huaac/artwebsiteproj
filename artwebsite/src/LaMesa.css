@@ -1,0 +1,31 @@
+.schedule {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  width: 75%;
+  height: 10px;
+}
+
+.header {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.day {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.time {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+

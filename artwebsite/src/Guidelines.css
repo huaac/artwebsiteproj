@@ -1,0 +1,39 @@
+.guidelines-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333;
+}
+
+.header {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+
+h6 {
+  color: #333;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 35px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
