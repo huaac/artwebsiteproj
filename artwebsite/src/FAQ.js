@@ -54,20 +54,34 @@ const FAQ = () => {
       answer: "We have 5 to 6 students working with one teacher. As the class grows, so do the number of teachers."
     },
   ];
+
+  const firstHalf = faqs.slice(0, Math.ceil(faqs.length / 2));
+  const secondHalf = faqs.slice(Math.ceil(faqs.length / 2));
+
   return (
-    <div>
-      <div className='faq-container'>
-        <div className='faq-header'>
-          Frequently Asked Questions
-        </div>
-        <div className='qna-section'>
-          {faqs.map((faq, index) => (
+    <div className="faq-container">
+      <h1 className="faq-header">Frequently Asked Questions</h1>
+      <div className="faq-columns">
+        <div className="faq-column">
+          {firstHalf.map((faq, index) => (
             <div key={index} className="faq-item">
               <div className="faq-question" onClick={() => toggleTab(index)}>
                 {faq.question}
-                <div className="faq-toggle">{openTab === index ? '-' : '+'}</div>
+                <span className="faq-toggle">{openTab === index ? '-' : '+'}</span>
               </div>
               {openTab === index && <div className="faq-answer">{faq.answer}</div>}
+            </div>
+          ))}
+        </div>
+
+        <div className="faq-column">
+          {secondHalf.map((faq, index) => (
+            <div key={index + firstHalf.length} className="faq-item">
+              <div className="faq-question" onClick={() => toggleTab(index + firstHalf.length)}>
+                {faq.question}
+                <span className="faq-toggle">{openTab === index + firstHalf.length ? '-' : '+'}</span>
+              </div>
+              {openTab === index + firstHalf.length && <div className="faq-answer">{faq.answer}</div>}
             </div>
           ))}
         </div>
