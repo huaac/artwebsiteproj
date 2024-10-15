@@ -32,7 +32,7 @@
 .slide-image {
   width: 600px;  
   height: 400px; 
-  object-fit: cover; 
+  object-fit: cover;
   border: 2px solid white; 
 }
 
@@ -92,11 +92,13 @@
 
 @media (max-width: 640px) {
   .slide-image {
-    width: 200px;  
-    height: 100px; 
+    width: 200px;
+    height: 100px;
     object-fit: cover; 
-    border: 2px solid white; 
+    border: 2px solid white;
     margin-left: -30px;
+
+    justify-content: center;
   }
 
   .embla__dots {

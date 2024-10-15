@@ -22,7 +22,7 @@ export const Contact = () => {
                 </div>
                 <div className="input-box">
                     <label>Subject</label>
-                    <input type="email" className="field" placeholder='Enter your ' required/>
+                    <input type="title" className="field" placeholder='Enter your subject' required/>
                 </div>
                 <div className="input-box">
                     <label>Your Message</label>

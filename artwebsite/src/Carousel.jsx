@@ -89,9 +89,9 @@ import { DotButton, useDotButton } from './CarouselButton'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
-import Abbey14OilP from './img/Abbey14OilP.svg';
-import Isaac11PastelP from './img/Isaac11PastelP.svg';
-import Jaelynn16OilsP from './img/Jaelynn16OilsP.svg';
+import Abbey14OilP from './img/Abbey14OilP.jpg';
+import Isaac11PastelP from './img/Isaac11PastelP.jpg';
+import Jaelynn16OilsP from './img/Jaelynn16OilsP.jpg';
 
 const EmblaCarousel = (props) => {
   const { options } = props

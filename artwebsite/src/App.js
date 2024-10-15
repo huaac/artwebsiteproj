@@ -6,6 +6,9 @@ import forestbg from "./img/forestbackground.jpg"
 import navbtn from "./img/navbtn.png"
 
 import { Contact } from "./Contact";
+import fbicon from "./img/facebookicon.png";
+import mailicon from "./img/mailicon.png";
+
 import Carousel from "./Carousel";
 import './embla.css';
 //import { RadioButton } from "./index.css"; //import(url)
@@ -88,7 +91,7 @@ function App() {
 
             <div className="infoandbutton" style={{flexDirection:'row'}}>
                 <div className="info" style={{flexDirection:'column', flex: '3'}}>
-                    <h2 className="bolded" style={{fontSize: '40px', position: 'relative', paddingLeft: '50px', paddingBottom: '30px', paddingTop:'70px', paddingRight: '30px', color: '#627432', fontWeight: 'bold',}}>
+                    <h2 className="bolded" style={{fontSize: '40px', fontWeight: 'bold'}}>
                         First art class is FREE for students ages 5-17!
                     </h2>
                     <p className="regtxt">
@@ -115,25 +118,31 @@ function App() {
                 </div>
             </div> */}
 
-            <div className="contact-section" style={{flexDirection:'row', backgroundColor: '#f8f8f8'}}>
-                <div className="info" style={{flexDirection:'column', flex: '3', paddingTop: '200px'}}>
-                    <h2 className="bolded"style={{paddingLeft: '50px', fontSize: '40px'}}>Have a Question?</h2>
-                    <p className='regtxt'>Reach out and we will get back to you!</p>
-                </div>
-                <div className= "info" style={{flexDirection:'column', flex: '3'}}>
-                    <div style={{paddingTop: '50px', paddingRight: '15px'}}> <Contact /> </div>
-                </div>
-            </div>
-        </main>
-
-        <div className="carouselgallery">
+            <div className="carouselgallery">
                 <div className="info" style={{textAlign:'center'}}>
                     <h2 className="bolded" style={{color:'white', fontSize: '40px', paddingTop: '50px'}}>Check out some of our amazing artists!</h2>
                 </div>
                 <div className='carousel'>
                 <Carousel slides={SLIDES} options={OPTIONS} />
                 </div>
-        </div>
+            </div>
+
+
+            <div className="contact-section" style={{flexDirection:'row', backgroundColor: '#f8f8f8'}}>
+                <div className="info-contact-section">
+                    <h2 className="bolded"style={{paddingLeft: '40px', paddingRight: '40px', fontSize: '40px'}}>Have a Question?</h2>
+                    <p className='regtxt'>Reach out and we will get back to you!</p>
+                    <div className="icons-img">
+                        <div> <img src={fbicon} alt="facebook icon"/> </div>
+                        <div> <img src={mailicon} alt="mail icon"/> </div>
+                    </div>
+                </div>
+                <div className= "info" style={{flexDirection:'column', flex: '3'}}>
+                    <div style={{paddingTop: '50px'}}> <Contact /> </div>
+                </div>
+            </div>
+        </main>
+
     </div>
 
 //    <div className="App">
