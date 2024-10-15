@@ -84,51 +84,51 @@
 // };
 
 
-import React, { useCallback } from 'react'
-import { DotButton, useDotButton } from './CarouselButton'
-import Autoplay from 'embla-carousel-autoplay'
-import useEmblaCarousel from 'embla-carousel-react'
+import React, { useCallback } from 'react';
+import { DotButton, useDotButton } from './CarouselButton';
+import Autoplay from 'embla-carousel-autoplay';
+import useEmblaCarousel from 'embla-carousel-react';
 
 import Abbey14OilP from './img/Abbey14OilP.jpg';
 import Isaac11PastelP from './img/Isaac11PastelP.jpg';
 import Jaelynn16OilsP from './img/Jaelynn16OilsP.jpg';
 
 const EmblaCarousel = (props) => {
-  const { options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
+  const { options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
   const onNavButtonClick = useCallback((emblaApi) => {
-    const autoplay = emblaApi?.plugins()?.autoplay
-    if (!autoplay) return
+    const autoplay = emblaApi?.plugins()?.autoplay;
+    if (!autoplay) return;
 
     const resetOrStop =
       autoplay.options.stopOnInteraction === false
         ? autoplay.reset
-        : autoplay.stop
+        : autoplay.stop;
 
-    resetOrStop()
-  }, [])
+    resetOrStop();
+  }, []);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
     emblaApi,
     onNavButtonClick
-  )
+  );
 
   const slides = [
-    { icon: Abbey14OilP },
-    { icon: Isaac11PastelP },
-    { icon: Jaelynn16OilsP }
+    { icon: Abbey14OilP, alt: 'Abbey F. (age 14) Oils' },
+    { icon: Isaac11PastelP, alt: 'Isaac L. (age 11) Pastels' },
+    { icon: Jaelynn16OilsP, alt: 'Jaelynn U. (age 16) Oils' },
   ];
 
   return (
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((slide, index) => (  
+          {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
               <img
-                src={slide.icon}  
-                alt={`Slide ${index + 1}`}
+                src={slide.icon}
+                alt={slide.alt}
                 className="slide-image"
               />
             </div>
@@ -142,15 +142,16 @@ const EmblaCarousel = (props) => {
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
-              )}
+              className={`embla__dot ${
+                index === selectedIndex ? 'embla__dot--selected' : ''
+              }`}
             />
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default EmblaCarousel
+export default EmblaCarousel;
+
