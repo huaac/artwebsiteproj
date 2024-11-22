@@ -3,8 +3,19 @@ import './Homepage2.css'
 
 const Homepage2 = () => {
   return (
-    <div>
+    <div className='homepage'>
+      <div className='carousel'>  
 
+      </div>
+      <div className='mission'>
+
+      </div>
+      <div className='locations'>
+
+      </div>
+      <div className='footer'>
+        
+      </div>
     </div>
   );
 };
