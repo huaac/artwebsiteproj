@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Homepage from './Homepage';
+import Homepage2 from './Homepage2';
 import Locations from './Locations';
 import Team from './Team';
 import Services from './Services';
@@ -13,7 +14,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Homepage2 />} />
         <Route path="/locations" element={<Locations />} />
         <Route path="/team" element={<Team />} />
         <Route path="/services" element={<Services />} />
