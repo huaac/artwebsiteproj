@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "./img/awlHeaderLogo.gif";
+import { Palette, MapPin, Pencil, PartyPopper, Brush, PenTool, CreditCard} from 'lucide-react';
+
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(null);
@@ -31,6 +33,7 @@ function Navbar() {
               onMouseLeave={handleMouseLeave}
             >
               <NavLink exact to="/" className="nav-links">
+                <Palette className="nav-icon"/>
                 Art Classes
               </NavLink>
               {dropdown === "home" && (
@@ -48,6 +51,7 @@ function Navbar() {
               onMouseLeave={handleMouseLeave}
             >
               <NavLink exact to="/locations" className="nav-links">
+               <MapPin className="nav-icon"/>
                 Locations
               </NavLink>
               {dropdown === "locations" && (
@@ -64,6 +68,7 @@ function Navbar() {
               onMouseLeave={handleMouseLeave}
             >
               <NavLink exact to="/camps" className="nav-links">
+                <Pencil className="nav-icon"/>
                 Art Camps
               </NavLink>
               {dropdown === "camps" && (
@@ -80,6 +85,7 @@ function Navbar() {
               onMouseLeave={handleMouseLeave}
             >
               <NavLink exact to="/parties" className="nav-links">
+               <PartyPopper className="nav-icon"/>
                 Art Parties
               </NavLink>
               {dropdown === "parties" && (
@@ -95,6 +101,7 @@ function Navbar() {
               onMouseLeave={handleMouseLeave}
             >
               <NavLink exact to="/tution" className="nav-links">
+               <CreditCard className="nav-icon"/>
                 Tuition
               </NavLink>
               {dropdown === "tuition" && (
@@ -111,6 +118,7 @@ function Navbar() {
               onMouseLeave={handleMouseLeave}
             >
               <NavLink exact to="/about" className="nav-links">
+               <Brush className="nav-icon"/>
                 About Us
               </NavLink>
               {dropdown === "about" && (

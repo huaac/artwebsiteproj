@@ -36,10 +36,18 @@
   position: relative;
 }
 
+.nav-icon {
+  width: 1em;
+  height: 1em;
+}
+
 .nav-links {
   color: white;
   text-decoration: none;
   padding: 10px 15px;
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
 }
 
 /* .nav-links:hover {
@@ -83,6 +91,9 @@
     color: white;
     text-decoration: none;
     padding: 10px 15px;
+    display: flex;
+    gap: 0.25em;
+    align-items: center;
   }
 
   .nav-item:first-child .dropdown-menu {
