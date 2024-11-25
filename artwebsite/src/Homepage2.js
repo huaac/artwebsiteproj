@@ -1,5 +1,6 @@
 import React from 'react';
-import './Homepage2.css'
+import './Homepage2.css';
+import LocationCards from './LocationCards';
 
 const Homepage2 = () => {
   return (
@@ -11,10 +12,10 @@ const Homepage2 = () => {
 
       </div>
       <div className='locations'>
-
+        <LocationCards />
       </div>
       <div className='footer'>
-        
+
       </div>
     </div>
   );
