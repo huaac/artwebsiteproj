@@ -74,6 +74,11 @@
   justify-content: center;
   align-items: center;
   padding: 10px 10px;
+  font-size: 20px;
+}
+
+.card-back h3 {
+  font-size: 30px;
 }
 
 .card-back span {
@@ -95,7 +100,11 @@
   background-color: rgb(138, 116, 107, 0.7);
   font-size: medium;
   border-radius: 10px;
-  margin-top: 100px;
+  margin-top: 15px;
+}
+
+.studio-page-link:hover {
+ text-decoration:underline ;
 }
 
 .studioimg {

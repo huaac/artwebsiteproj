@@ -20,10 +20,11 @@ const LocationCards = () => {
             </div>
             <div className="card-back">
               <h3>Address</h3>
-              <p>6119 Lake Murray Blvd. CA 91942</p>
-              <h3>Contact Information</h3>
-              <span>(619) 857-1270 </span>
-              <span>artwithlarisse@gmail.com</span>
+              <p>6119 Lake Murray Blvd.</p>
+              <p>La Mesa, CA 91942</p>
+              <h3 className="contact-info">Contact Information</h3>
+              <p>(619) 857-1270 </p>
+              <p>artwithlarisse@gmail.com</p>
               <button className="studio-page-link">Learn More</button>
             </div>
           </div>
@@ -37,10 +38,11 @@ const LocationCards = () => {
             </div>
             <div className="card-back">
               <h3>Address</h3>
-              <p>9225 Carlton Hills Blvd, Ste. 5 Santee, CA 92071</p>
-              <h3>Contact Information</h3>
-              <span>(619) 855 - 2787 </span>
-              <span>artwithlarisse@gmail.com</span>
+              <p>9225 Carlton Hills Blvd, Ste. 5</p>
+              <p>Santee, CA 92071</p>
+              <h3 className="contact-info">Contact Information</h3>
+              <p>(619) 855 - 2787 </p>
+              <p>artwithlarisse@gmail.com</p>
               <button className="studio-page-link">Learn More</button>
             </div>
           </div>
@@ -54,10 +56,11 @@ const LocationCards = () => {
             </div>
             <div className="card-back">
               <h3>Address</h3>
-              <p>4510 Bonita Road Bonita, CA 91902</p>
-              <h3>Contact Information</h3>
-              <span>(619) 508-1299 </span>
-              <span>artwithlarisse@gmail.com</span>
+              <p>4510 Bonita Road</p>
+              <p>Bonita, CA 91902</p>
+              <h3 className="contact-info">Contact Information</h3>
+              <p>(619) 508-1299 </p>
+              <p>artwithlarisse@gmail.com</p>
               <button className="studio-page-link">Learn More</button>
             </div>
           </div>
