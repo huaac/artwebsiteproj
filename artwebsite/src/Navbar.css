@@ -13,6 +13,8 @@
 .navbar {
   background-color: #5B5B5B;
   padding: 10px 20px; 
+  z-index: 200;
+  position: relative;
 } 
 
 .nav-container {

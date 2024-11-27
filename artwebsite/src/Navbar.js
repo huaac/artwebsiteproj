@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "./img/awlHeaderLogo.gif";
 import { Palette, MapPin, Pencil, PartyPopper, Brush, PenTool, CreditCard} from 'lucide-react';
+import { TiPencil } from "react-icons/ti";
 
 
 function Navbar() {
@@ -68,7 +69,7 @@ function Navbar() {
               onMouseLeave={handleMouseLeave}
             >
               <NavLink exact to="/camps" className="nav-links">
-                <Pencil className="nav-icon"/>
+                <TiPencil className="nav-icon"/>
                 Art Camps
               </NavLink>
               {dropdown === "camps" && (
