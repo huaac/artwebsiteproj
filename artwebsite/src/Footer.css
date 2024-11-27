@@ -1,0 +1,28 @@
+.footer-container {
+  width: 100%;
+  height: 10%;
+  background-color: #DEE3D2;
+}
+
+.footer {
+  background-color: #DEE3D2;
+}
+
+.socials {
+  width: 25px;
+  height: 25px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.links {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.footer-q:hover {
+  text-decoration: underline;
+}
