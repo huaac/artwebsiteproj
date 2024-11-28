@@ -6,7 +6,7 @@ import bonitafront from "./img/bonitaimg.jpeg"
 
 const LocationCards = () => {
   return (
-    <div id="projects"className="locations-section">
+    <div className="locations-section">
       <div className="locations-title">
         <p>We Have 3 Locations In San Diego</p>
       </div>
