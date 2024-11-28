@@ -12,7 +12,7 @@ import Homepage2 from './Homepage2';
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar classname="navbar"/>
       <Routes>
         <Route path="/" element={<Homepage2 />} />
         {/* <Route path="/locations" element={<Locations />} />
