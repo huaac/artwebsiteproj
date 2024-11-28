@@ -1,0 +1,11 @@
+.carousel, .mission {
+  margin-bottom: 70px;
+  background-color: #FAF8F6;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.locations {
+  background-color: #FAF8F6; 
+  padding-bottom: 20px;
+}
