@@ -3,6 +3,7 @@ import './Homepage2.css';
 import LocationCards from './LocationCards';
 import Slides from './Slide'
 import Footer from './Footer'
+import Mission from './Mission'
 
 const Homepage2 = () => {
   const OPTIONS = { loop: true }
@@ -14,7 +15,10 @@ const Homepage2 = () => {
         <Slides slides={SLIDES} options={OPTIONS} />
       </div>
       <div className='mission'>
-
+        <Mission />
+      </div>
+      <div className='line-container'>
+        <div className='line'></div>
       </div>
       <div className='locations'>
         <LocationCards />
