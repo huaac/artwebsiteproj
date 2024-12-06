@@ -2,6 +2,7 @@ import React from "react";
 import { BsInstagram } from "react-icons/bs";
 import { AiOutlineFacebook } from "react-icons/ai";
 import './Footer.css'
+import paintbrush from "./img/paintbrush.png";
 
 const Footer = () => {
   
@@ -15,6 +16,8 @@ const Footer = () => {
         <div className="links">
           <p className="footer-q">FREQUENTY ASKED QUESTIONS</p>
           <p className="footer-q">BECOME AN INSTRUCTOR</p>
+        </div>
+        <div className="paintbrush-img">
         </div>
       </div>
     </div>

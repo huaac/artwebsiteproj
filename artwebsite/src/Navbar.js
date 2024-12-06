@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import logo from "./img/awlHeaderLogo.gif";
+import logo from "./img/awlHeaderLogo.png";
 import { Palette, MapPin, Pencil, PartyPopper, Brush, PenTool, CreditCard} from 'lucide-react';
 import { TiPencil } from "react-icons/ti";
+import navbtn from "./img/navbtn.png";
 
 
 function Navbar() {
@@ -17,12 +18,41 @@ function Navbar() {
     setDropdown(null);
   };
 
+
+  const handleClick = () => {
+    console.log("button is clicked");
+  };
+
+  const openNav = () => {
+    document.getElementById("olNav").style.height = "100%";
+  };
+
+  const closeNav = () => {
+    document.getElementById("olNav").style.height = "0%";
+  };
+
+  const dropDownONav = (iD) => {
+//        const disPlay = document.getElementById(iD).style.display;
+        if (document.getElementById(iD).style.display == "none") {
+        document.getElementById(iD).style.display = "block";
+        }
+        else {
+        document.getElementById(iD).style.display = "none";
+        }
+//        document.getElementById(iD).style.display = "block";
+  };
+
+
   return (
     <div>
       <div className="logo-container">
         <NavLink exact to="/" className="nav-logo">
           <img src={logo} alt="Logo" />
         </NavLink>
+
+        <button type="button" className="navbar-toggler" onClick={openNav}>
+                <img src={navbtn} className="navbar-toggler-icon"/>
+            </button>
       </div>
 
       <nav className="navbar">
@@ -133,6 +163,47 @@ function Navbar() {
           </ul>
         </div>
       </nav>
+      <div id="olNav" className="overlay">
+            <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
+            <div className="overlay-content">
+                <a href="javascript:void(0)" onClick={()=>dropDownONav("ArtClassItems")}>Art Classes</a>
+                    <div id = "ArtClassItems" className="overlay-content-hidden">
+                       <a href="/">Regular Classes</a>
+                       <a href="/">Adult Classes</a>
+                       <a href="/">Charter Schools</a>
+                       <a href="/">Girl & Boy Scout Classes</a>
+                    </div>
+                <a href="javascript:void(0)" onClick={()=>dropDownONav("LocationItems")}>Locations</a>
+                    <div id = "LocationItems" className="overlay-content-hidden">
+                           <a href="/">La Mesa</a>
+                           <a href="/">Santee</a>
+                           <a href="/">Bonita</a>
+                    </div>
+                <a href="javascript:void(0)" onClick={()=>dropDownONav("ArtCampsItems")}>Art Camps</a>
+                    <div id = "ArtCampsItems" className="overlay-content-hidden">
+                           <a href="/">Summer Camps</a>
+                           <a href="/">Spring Camps</a>
+                           <a href="/">Holiday Camps</a>
+                    </div>
+                <a href="javascript:void(0)" onClick={()=>dropDownONav("ArtPartiesItems")}>Art Parties</a>
+                    <div id = "ArtPartiesItems" className="overlay-content-hidden">
+                           <a href="/">Birthday Parties</a>
+                           <a href="/">Paint Parties</a>
+                    </div>
+                <a href="javascript:void(0)" onClick={()=>dropDownONav("TuitionItems")}>Tuition</a>
+                    <div id = "TuitionItems" className="overlay-content-hidden">
+                           <a href="/">Tuition Policies</a>
+                           <a href="/">Pay Tuition</a>
+                           <a href="/">FAQs</a>
+                    </div>
+                <a href="javascript:void(0)" onClick={()=>dropDownONav("AboutUsItems")}>About Us</a>
+                    <div id = "AboutUsItems" className="overlay-content-hidden">
+                           <a href="/">Mission Statement</a>
+                           <a href="/">Instructors</a>
+                           <a href="/">FAQs</a>
+                    </div>
+            </div>
+        </div>
     </div>
   );
 }
