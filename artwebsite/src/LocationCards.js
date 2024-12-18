@@ -9,6 +9,7 @@ const LocationCards = () => {
     <div className="locations-section">
       <div className="locations-title">
         <p>We Have 3 Locations In San Diego</p>
+        <div className="sub-hidden-text">Click on a card for more details!</div>
       </div>
       <div className="card-section">
         <div className="card"> 
