@@ -16,11 +16,11 @@ const Mission = () => {
           Whether you are a beginner or a skilled artist, 
           we provide individual art instruction for anyone with an interest in art, 
           allowing you to move at your own pace and enjoy learning art every step of the way.
-        </p>
-        <p>
-          Learn to use mediums such as pastel, charcoal, watercolor, and oil. 
-          Classes available for adults and children 5+.
-        </p>
+          </p>
+          <p>
+            Learn to use mediums such as pastel, charcoal, watercolor, and oil. 
+            Classes available for adults and children 5+.
+          </p>
         </div>
       </div>
     </div>
