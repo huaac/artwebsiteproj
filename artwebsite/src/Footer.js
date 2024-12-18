@@ -10,12 +10,12 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer">
         <div className="socials-icons">
+          <p className="gallery-text">SOCIAL MEDIA GALLERY: </p>
           <BsInstagram className="socials"/>
           <AiOutlineFacebook className="socials"/>
         </div>
         <div className="links">
-          <p className="footer-q">FREQUENTY ASKED QUESTIONS</p>
-          <p className="footer-q">BECOME AN INSTRUCTOR</p>
+          <p className="footer-q">FREQUENTLY ASKED QUESTIONS</p>
         </div>
         <div className="paintbrush-img">
         </div>

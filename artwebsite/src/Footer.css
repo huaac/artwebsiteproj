@@ -9,10 +9,23 @@
   background-color: #DEE3D2;
 }
 
+.gallery-text {
+  margin-left: 30px;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.socials-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .socials {
   width: 25px;
   height: 25px;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-top: 10px;
 }
 
