@@ -1,5 +1,5 @@
 .embla {
-  height: 400px;
+  height: 500px;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem; 
@@ -22,7 +22,7 @@
 }
 
 .slide {
-  height: 475px;
+  height: 575px;
   width: 100%;
   object-fit: cover;
   display: flex;

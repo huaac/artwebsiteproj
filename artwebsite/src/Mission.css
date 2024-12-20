@@ -8,11 +8,16 @@
 .mission-img {
   height: 420px;
   width: auto;
-  border-style: solid;
+  /*border-style: solid;*/
   border-width: 10px;
   border-color: #8A746B;
-  rotate: -6deg;
+  /*rotate: -6deg;*/
   margin-top: 50px;
+  box-shadow: 0px 0px 0px 10px hsl(from rgb(177 110 23) 0 10% 50%),
+              0px 0px 0px 15px hsl(from rgb(177 110 23) 0 10% 60%),
+              0px 0px 0px 20px hsl(from rgb(177 110 23) 0 10% 70%),
+              0px 0px 0px 25px hsl(from rgb(177 110 23) 0 10% 80%),
+              0px 0px 0px 25px hsl(from rgb(177 110 23) 0 10% 90%);
 }
 
 .statement {
@@ -44,6 +49,19 @@ hr {
   border-bottom:1px solid;
   border-color: black;
   }
+
+.rectangle {
+  width:350px;
+  height:450px;
+  background: #826c63;
+  margin-top: 40px;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.overlap {
+  position: relative;
+}
 
 @media (max-width: 768px) {
   .mission {
@@ -77,6 +95,7 @@ hr {
   .mission {
     flex-direction: column;
     padding: 30px;
+    margin-top:30px;
   }
 
   .mission-img {
@@ -98,5 +117,13 @@ hr {
   .text {
     padding: 15px;
     font-size: 19px;
+  }
+
+  .rectangle {
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: block;
   }
 }
