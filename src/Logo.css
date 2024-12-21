@@ -1,0 +1,13 @@
+.logo {
+  width: 40%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.logo-container {
+  background-color: #DEE3D2;
+  display: flex;
+  justify-content: center;
+}
+

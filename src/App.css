@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.body {
+  background-color: aliceblue;
+}
+
+.pages {
+  color: #faf8f6;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 10%;
+}
