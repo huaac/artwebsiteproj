@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/artwebsiteproj/static/css/main.2b2d0f2b.css",
-    "main.js": "/artwebsiteproj/static/js/main.6f0c84e3.js",
-    "static/media/slide3.png": "/artwebsiteproj/static/media/slide3.e5a716034dd91668b192.png",
-    "static/media/slide2.png": "/artwebsiteproj/static/media/slide2.133fa03fb08c4db773c7.png",
-    "static/media/slide1.jpg": "/artwebsiteproj/static/media/slide1.8d55548a52c68f8a02f9.jpg",
-    "static/media/santeeimg.jpg": "/artwebsiteproj/static/media/santeeimg.68864a8502fcdbe9462f.jpg",
-    "static/media/missionimg.jpg": "/artwebsiteproj/static/media/missionimg.7b6d5a8ae5eabea0e915.jpg",
-    "static/media/paintbrush.png": "/artwebsiteproj/static/media/paintbrush.c606008f24aedbd20daa.png",
-    "static/media/awlHeaderLogo.png": "/artwebsiteproj/static/media/awlHeaderLogo.c889e91a27392dc9df1b.png",
-    "static/media/lamesafront.jpg": "/artwebsiteproj/static/media/lamesafront.57a1eafe64c0008c0eff.jpg",
-    "static/media/bonitaimg.jpeg": "/artwebsiteproj/static/media/bonitaimg.2234c2e70359ca6b23dc.jpeg",
-    "static/media/forestbackground.jpg": "/artwebsiteproj/static/media/forestbackground.44d6205b5b0c47673498.jpg",
-    "index.html": "/artwebsiteproj/index.html",
-    "main.2b2d0f2b.css.map": "/artwebsiteproj/static/css/main.2b2d0f2b.css.map",
-    "main.6f0c84e3.js.map": "/artwebsiteproj/static/js/main.6f0c84e3.js.map"
+    "main.css": "/huaac/artwebsiteproj/static/css/main.2b2d0f2b.css",
+    "main.js": "/huaac/artwebsiteproj/static/js/main.6ba26577.js",
+    "static/media/slide3.png": "/huaac/artwebsiteproj/static/media/slide3.e5a716034dd91668b192.png",
+    "static/media/slide2.png": "/huaac/artwebsiteproj/static/media/slide2.133fa03fb08c4db773c7.png",
+    "static/media/slide1.jpg": "/huaac/artwebsiteproj/static/media/slide1.8d55548a52c68f8a02f9.jpg",
+    "static/media/santeeimg.jpg": "/huaac/artwebsiteproj/static/media/santeeimg.68864a8502fcdbe9462f.jpg",
+    "static/media/missionimg.jpg": "/huaac/artwebsiteproj/static/media/missionimg.7b6d5a8ae5eabea0e915.jpg",
+    "static/media/paintbrush.png": "/huaac/artwebsiteproj/static/media/paintbrush.c606008f24aedbd20daa.png",
+    "static/media/awlHeaderLogo.png": "/huaac/artwebsiteproj/static/media/awlHeaderLogo.c889e91a27392dc9df1b.png",
+    "static/media/lamesafront.jpg": "/huaac/artwebsiteproj/static/media/lamesafront.57a1eafe64c0008c0eff.jpg",
+    "static/media/bonitaimg.jpeg": "/huaac/artwebsiteproj/static/media/bonitaimg.2234c2e70359ca6b23dc.jpeg",
+    "static/media/forestbackground.jpg": "/huaac/artwebsiteproj/static/media/forestbackground.44d6205b5b0c47673498.jpg",
+    "index.html": "/huaac/artwebsiteproj/index.html",
+    "main.2b2d0f2b.css.map": "/huaac/artwebsiteproj/static/css/main.2b2d0f2b.css.map",
+    "main.6ba26577.js.map": "/huaac/artwebsiteproj/static/js/main.6ba26577.js.map"
   },
   "entrypoints": [
     "static/css/main.2b2d0f2b.css",
-    "static/js/main.6f0c84e3.js"
+    "static/js/main.6ba26577.js"
   ]
 }
