@@ -84,36 +84,8 @@
   font-size: larger;
 }
 
-.hamburger-menu {
-  display: none; 
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
-  .hamburger-menu {
-    display: block; 
-  }
-
-  .navbar-links {
-    display: none; 
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar-links.open {
-    display: flex; 
-  }
-
-  .navbar-item {
-    margin: 0.5rem 0;
-  }
-
-  .dropdown-menu {
-    position: static; 
+  .navbar {
+    display: none;
   }
 }

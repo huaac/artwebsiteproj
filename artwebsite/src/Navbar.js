@@ -18,17 +18,8 @@ const Navbar = () => {
     setIsDropdownOpen((prev) => ({ ...prev, [tab]: !prev[tab] }));
   };
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev); 
-  };
-
   return (
     <nav className="navbar">
-      <div className="navbar-header">
-        <button className="hamburger-menu" onClick={toggleMenu}>
-          <Menu />
-        </button>
-      </div>
       <ul className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
         <li className="navbar-item dropdown">
           <button className="dropdown-btn" onClick={() => toggleDropdown("classes")}>
