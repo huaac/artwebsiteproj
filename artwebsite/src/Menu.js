@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -13,6 +13,18 @@ import { useMediaQuery } from '@mui/material';
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = React.useState({});
+  const [isButtonVisible, setIsButtonVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsButtonVisible(window.scrollY === 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -23,7 +35,7 @@ export default function TemporaryDrawer() {
   };
 
   const DrawerList = (
-    <Box className='box' sx={{ width: '100%', display: 'flex', flexDirection: 'column'}}>
+    <Box className='box' sx={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: "rgba(255, 255, 255, 0.3)" }}>
       <List>
         <ListItem className="navbar-item dropdown" sx={{ display: 'block' }}>
           <ListItemButton onClick={() => toggleDropdown("classes")} sx={{ justifyContent: 'flex-start' }}> 
@@ -147,15 +159,15 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      {isMobileOrTablet && (
+      {isMobileOrTablet && isButtonVisible && (
         <Button 
           onClick={toggleDrawer(true)} 
-          style={{ position: 'fixed',top: 50, right: 16, color: 'black' }}
+          style={{ position: 'fixed', top: 25, right: 16, color: 'black' }}
         >
           <Menu />
         </Button>
       )}
-      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)} sx={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
         {DrawerList}
       </Drawer>
     </div>
